@@ -1,0 +1,267 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: WDXL Lubrifont TC;
+    color: gray;
+}
+nav{
+    display: flex;
+    flex: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px ;
+}
+.navl{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.navl img{
+    width: 50px;
+    height: auto;
+}
+nav .navl h6{
+    text-transform: uppercase;
+    font-size: 35px;
+}
+.navc{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: capitalize;
+}
+.navc span{
+    margin: auto 10px;
+    color: gray;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.navc span:hover{
+    scale: 0.95;
+}
+button{
+    border-radius: 20px;
+    height: 30px;
+    width: 150px;
+    padding: 5px;
+    border: none;
+    /* background: linear-gradient(rgb(0, 128, 0),rgba(39, 215, 39, 0.348)),rgba(59, 184, 59, 0.325); */
+    color: white;
+    background: linear-gradient(green,var(--maincolor));
+    cursor:pointer;
+    transition: 0.5s;
+}
+button:hover{
+    scale: 0.9;
+}
+:root{
+    --maincolor:#6fbb31;
+}
+main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 100px;
+}
+main div{
+    margin: 1px;
+}
+main .img1{
+    width: 400px;
+    height: 400px;
+    background-image: url(img1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+    box-shadow: 0 0 5px black;
+    border: none;
+}
+.mainl{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    text-align: start;
+    width: 50%;
+}
+.mainl button,
+.mainl h2{
+    width: 100%;
+    margin: 60px auto;
+}
+.mainl h2{
+    text-transform: uppercase;
+    font-size: 80px;
+    
+}
+.mainl h2 span{
+    color: var(--maincolor);
+}
+.mainl button{
+    width: 200px;
+    font-size: 20px;
+    height: auto;
+    position: relative;
+    right: 200px;
+}
+.service{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content:space-around ;
+    margin: auto 120px;
+}
+.service p{
+    margin: 10px auto;
+}
+.cards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.cards div{
+    width: 500px;
+    height: 200px;
+    justify-content: center;
+    align-content: space-between;
+    align-items: center;
+    margin: 20px;
+    background-color: #eee;
+    border-radius: 20px;
+    box-shadow: 0 0 5px gray;
+    text-align: center;
+    padding: 10px;
+    transition: 0.3s;
+    text-transform: capitalize;
+}
+.cards img{
+    width: 100px;
+
+}
+.cards div:hover{
+    scale: 0.95;
+}
+h1{
+    text-transform: capitalize;
+    font-size: 40px;
+    width: max-content;
+    position: relative;
+}
+h1::after{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border: 20px solid var(--maincolor);
+    border-radius: 50%;
+    border-bottom-left-radius: 0;
+    left: -50px;
+    bottom: -20px;
+    outline: #eee solid 5px;
+}
+.propos{
+    margin: auto 120px;
+}
+ul{
+    list-style: none;
+    margin: 20px auto;
+    counter-reset: section;
+}
+li{
+    margin: 30px auto auto 40px;
+}
+h4{
+    position: relative;
+}
+
+h4::before{
+    counter-increment: section;
+    content: ""counter(section);
+    position: absolute;
+    left:-40px;
+    top: -10px;
+    font-size: 60px;
+    color: var(--maincolor);
+}
+.contact{
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto ;
+    text-transform: capitalize;
+    
+}
+.contactr{
+    width: 500px;
+    height: 400px;
+    background-image: url(img2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    box-shadow: 0 0 5px gray;
+}
+.contactl{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    text-transform: capitalize;
+
+}
+
+.contact input{
+    width: 300px;
+    height: 30px;
+    margin: 10px auto;
+    border-radius: 20px;
+    border: 1px solid gray;
+    padding: 10px;
+    
+    
+}
+textarea{
+    border-radius: 20px;
+    border: 1px solid gray;
+    padding: 10px;
+    width: 300px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+.contact input,
+textarea{
+    background-color: #eee;
+    border-color: var(--maincolor);
+    outline: none;
+}
+.contact input:focus,
+textarea:focus{
+    box-shadow: 0 0 2px;
+
+}
+.a{
+    margin-left: 120px;
+    margin-bottom: 50px;
+}
+.contactl button{
+    height: 50px;
+    font-size: 20px;
+    padding: auto;
+    width: 200px;
+}
+footer{
+    margin-top: 20px;
+    background-color: var(--maincolor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+footer p{
+    color: white;
+    text-transform: capitalize;
+}
+::selection{
+    background-color: rgb(205, 214, 200);
+    color: var(--maincolor);
+}
